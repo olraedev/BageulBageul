@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		EC44FF892C201F11006E47BD /* FontAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF882C201F11006E47BD /* FontAsset.swift */; };
 		EC44FF8D2C202187006E47BD /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC44FF8B2C202187006E47BD /* SF-Pro.ttf */; };
+		EC44FF922C202434006E47BD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF912C202434006E47BD /* OnboardingView.swift */; };
+		EC44FF952C2029A4006E47BD /* ButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF942C2029A4006E47BD /* ButtonWrapper.swift */; };
 		ECC735AA2C14360700987355 /* BageulBageulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735A92C14360700987355 /* BageulBageulApp.swift */; };
-		ECC735AC2C14360700987355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735AB2C14360700987355 /* ContentView.swift */; };
 		ECC735AE2C14360800987355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC735AD2C14360800987355 /* Assets.xcassets */; };
 		ECC735B12C14360800987355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC735B02C14360800987355 /* Preview Assets.xcassets */; };
 		ECC735BB2C14360800987355 /* BageulBageulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735BA2C14360800987355 /* BageulBageulTests.swift */; };
@@ -41,9 +42,10 @@
 		EC44FF882C201F11006E47BD /* FontAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAsset.swift; sourceTree = "<group>"; };
 		EC44FF8B2C202187006E47BD /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		EC44FF8F2C2021D0006E47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC44FF912C202434006E47BD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EC44FF942C2029A4006E47BD /* ButtonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWrapper.swift; sourceTree = "<group>"; };
 		ECC735A62C14360700987355 /* BageulBageul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BageulBageul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC735A92C14360700987355 /* BageulBageulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BageulBageulApp.swift; sourceTree = "<group>"; };
-		ECC735AB2C14360700987355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECC735AD2C14360800987355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC735B02C14360800987355 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECC735B62C14360800987355 /* BageulBageulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BageulBageulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,22 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		EC44FF902C202413006E47BD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EC44FF912C202434006E47BD /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EC44FF932C2028EA006E47BD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EC44FF942C2029A4006E47BD /* ButtonWrapper.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		ECC7359D2C14360700987355 = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				EC44FF8F2C2021D0006E47BD /* Info.plist */,
-				EC44FF8A2C202169006E47BD /* Font */,
 				ECC735D52C16F7F200987355 /* Environment.swift */,
+				EC44FF8A2C202169006E47BD /* Font */,
+				EC44FF932C2028EA006E47BD /* Custom */,
+				EC44FF902C202413006E47BD /* Onboarding */,
 				ECC735A92C14360700987355 /* BageulBageulApp.swift */,
-				ECC735AB2C14360700987355 /* ContentView.swift */,
 				ECC735AD2C14360800987355 /* Assets.xcassets */,
 				ECC735AF2C14360800987355 /* Preview Content */,
 			);
@@ -281,10 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC735AC2C14360700987355 /* ContentView.swift in Sources */,
 				EC44FF892C201F11006E47BD /* FontAsset.swift in Sources */,
 				ECC735D62C16F7F200987355 /* Environment.swift in Sources */,
+				EC44FF922C202434006E47BD /* OnboardingView.swift in Sources */,
 				ECC735AA2C14360700987355 /* BageulBageulApp.swift in Sources */,
+				EC44FF952C2029A4006E47BD /* ButtonWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
