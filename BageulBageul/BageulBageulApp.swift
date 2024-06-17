@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct BageulBageulApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            OnboardingView(store: Store(initialState: OnboardingFeature.State(), reducer: {
+                OnboardingFeature()
+            }))
         }
     }
 }

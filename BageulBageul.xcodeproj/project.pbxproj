@@ -11,6 +11,11 @@
 		EC44FF8D2C202187006E47BD /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC44FF8B2C202187006E47BD /* SF-Pro.ttf */; };
 		EC44FF922C202434006E47BD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF912C202434006E47BD /* OnboardingView.swift */; };
 		EC44FF952C2029A4006E47BD /* ButtonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF942C2029A4006E47BD /* ButtonWrapper.swift */; };
+		EC44FF972C2031D8006E47BD /* OnboardingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF962C2031D8006E47BD /* OnboardingFeature.swift */; };
+		EC44FF9A2C2031F7006E47BD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = EC44FF992C2031F7006E47BD /* ComposableArchitecture */; };
+		EC44FF9D2C20329B006E47BD /* FeatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF9C2C20329B006E47BD /* FeatureType.swift */; };
+		EC44FF9F2C203637006E47BD /* SelectAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF9E2C203637006E47BD /* SelectAuthView.swift */; };
+		EC44FFA12C2036A4006E47BD /* SelectAuthFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FFA02C2036A4006E47BD /* SelectAuthFeature.swift */; };
 		ECC735AA2C14360700987355 /* BageulBageulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735A92C14360700987355 /* BageulBageulApp.swift */; };
 		ECC735AE2C14360800987355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC735AD2C14360800987355 /* Assets.xcassets */; };
 		ECC735B12C14360800987355 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC735B02C14360800987355 /* Preview Assets.xcassets */; };
@@ -44,6 +49,10 @@
 		EC44FF8F2C2021D0006E47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EC44FF912C202434006E47BD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EC44FF942C2029A4006E47BD /* ButtonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWrapper.swift; sourceTree = "<group>"; };
+		EC44FF962C2031D8006E47BD /* OnboardingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFeature.swift; sourceTree = "<group>"; };
+		EC44FF9C2C20329B006E47BD /* FeatureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureType.swift; sourceTree = "<group>"; };
+		EC44FF9E2C203637006E47BD /* SelectAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAuthView.swift; sourceTree = "<group>"; };
+		EC44FFA02C2036A4006E47BD /* SelectAuthFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAuthFeature.swift; sourceTree = "<group>"; };
 		ECC735A62C14360700987355 /* BageulBageul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BageulBageul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC735A92C14360700987355 /* BageulBageulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BageulBageulApp.swift; sourceTree = "<group>"; };
 		ECC735AD2C14360800987355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC44FF9A2C2031F7006E47BD /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +104,10 @@
 		EC44FF902C202413006E47BD /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				EC44FF962C2031D8006E47BD /* OnboardingFeature.swift */,
 				EC44FF912C202434006E47BD /* OnboardingView.swift */,
+				EC44FFA02C2036A4006E47BD /* SelectAuthFeature.swift */,
+				EC44FF9E2C203637006E47BD /* SelectAuthView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -105,6 +118,14 @@
 				EC44FF942C2029A4006E47BD /* ButtonWrapper.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		EC44FF9B2C20328B006E47BD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EC44FF9C2C20329B006E47BD /* FeatureType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		ECC7359D2C14360700987355 = {
@@ -131,6 +152,7 @@
 		ECC735A82C14360700987355 /* BageulBageul */ = {
 			isa = PBXGroup;
 			children = (
+				EC44FF9B2C20328B006E47BD /* Protocols */,
 				EC44FF8F2C2021D0006E47BD /* Info.plist */,
 				ECC735D52C16F7F200987355 /* Environment.swift */,
 				EC44FF8A2C202169006E47BD /* Font */,
@@ -184,6 +206,9 @@
 			dependencies = (
 			);
 			name = BageulBageul;
+			packageProductDependencies = (
+				EC44FF992C2031F7006E47BD /* ComposableArchitecture */,
+			);
 			productName = BageulBageul;
 			productReference = ECC735A62C14360700987355 /* BageulBageul.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +281,9 @@
 				Base,
 			);
 			mainGroup = ECC7359D2C14360700987355;
+			packageReferences = (
+				EC44FF982C2031F7006E47BD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = ECC735A72C14360700987355 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,8 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC44FF892C201F11006E47BD /* FontAsset.swift in Sources */,
+				EC44FFA12C2036A4006E47BD /* SelectAuthFeature.swift in Sources */,
 				ECC735D62C16F7F200987355 /* Environment.swift in Sources */,
 				EC44FF922C202434006E47BD /* OnboardingView.swift in Sources */,
+				EC44FF972C2031D8006E47BD /* OnboardingFeature.swift in Sources */,
+				EC44FF9F2C203637006E47BD /* SelectAuthView.swift in Sources */,
+				EC44FF9D2C20329B006E47BD /* FeatureType.swift in Sources */,
 				ECC735AA2C14360700987355 /* BageulBageulApp.swift in Sources */,
 				EC44FF952C2029A4006E47BD /* ButtonWrapper.swift in Sources */,
 			);
@@ -646,6 +678,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC44FF982C2031F7006E47BD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC44FF992C2031F7006E47BD /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC44FF982C2031F7006E47BD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECC7359E2C14360700987355 /* Project object */;
 }

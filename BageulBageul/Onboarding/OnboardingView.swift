@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct OnboardingView: View {
+    
+    @Perception.Bindable var store: StoreOf<OnboardingFeature>
+    
     var body: some View {
         ZStack {
             Color.backgroundPrimary
@@ -29,13 +33,20 @@ struct OnboardingView: View {
                     .font(.customTitle2)
                     .foregroundStyle(.brandWhite)
                     .wrapToButton(iamge: nil, backgroundColor: .brandGreen) {
-                        print("clicked")
+                        store.send(.startButtonTapped)
                     }
             }
+        }
+        .sheet(item: $store.scope(state: \.destination?.selectAuth, action: \.destination.selectAuth)) { selectAuthStore in
+            SelectAuthView(store: selectAuthStore)
+                .presentationDetents([.height(290)])
+                .presentationDragIndicator(.visible)
         }
     }
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView(store: Store(initialState: OnboardingFeature.State(), reducer: {
+        OnboardingFeature()
+    }))
 }
