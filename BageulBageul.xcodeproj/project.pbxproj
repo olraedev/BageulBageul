@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC44FF892C201F11006E47BD /* FontAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44FF882C201F11006E47BD /* FontAsset.swift */; };
+		EC44FF8D2C202187006E47BD /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC44FF8B2C202187006E47BD /* SF-Pro.ttf */; };
 		ECC735AA2C14360700987355 /* BageulBageulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735A92C14360700987355 /* BageulBageulApp.swift */; };
 		ECC735AC2C14360700987355 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735AB2C14360700987355 /* ContentView.swift */; };
 		ECC735AE2C14360800987355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC735AD2C14360800987355 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 		ECC735C52C14360800987355 /* BageulBageulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735C42C14360800987355 /* BageulBageulUITests.swift */; };
 		ECC735C72C14360900987355 /* BageulBageulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735C62C14360900987355 /* BageulBageulUITestsLaunchTests.swift */; };
 		ECC735D42C14364400987355 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ECC735D32C14364400987355 /* .gitignore */; };
+		ECC735D62C16F7F200987355 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC735D52C16F7F200987355 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC44FF882C201F11006E47BD /* FontAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAsset.swift; sourceTree = "<group>"; };
+		EC44FF8B2C202187006E47BD /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
+		EC44FF8F2C2021D0006E47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ECC735A62C14360700987355 /* BageulBageul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BageulBageul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC735A92C14360700987355 /* BageulBageulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BageulBageulApp.swift; sourceTree = "<group>"; };
 		ECC735AB2C14360700987355 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +52,7 @@
 		ECC735C42C14360800987355 /* BageulBageulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BageulBageulUITests.swift; sourceTree = "<group>"; };
 		ECC735C62C14360900987355 /* BageulBageulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BageulBageulUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ECC735D32C14364400987355 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		ECC735D52C16F7F200987355 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC44FF8A2C202169006E47BD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EC44FF8B2C202187006E47BD /* SF-Pro.ttf */,
+				EC44FF882C201F11006E47BD /* FontAsset.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		ECC7359D2C14360700987355 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +113,9 @@
 		ECC735A82C14360700987355 /* BageulBageul */ = {
 			isa = PBXGroup;
 			children = (
+				EC44FF8F2C2021D0006E47BD /* Info.plist */,
+				EC44FF8A2C202169006E47BD /* Font */,
+				ECC735D52C16F7F200987355 /* Environment.swift */,
 				ECC735A92C14360700987355 /* BageulBageulApp.swift */,
 				ECC735AB2C14360700987355 /* ContentView.swift */,
 				ECC735AD2C14360800987355 /* Assets.xcassets */,
@@ -235,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC735B12C14360800987355 /* Preview Assets.xcassets in Resources */,
+				EC44FF8D2C202187006E47BD /* SF-Pro.ttf in Resources */,
 				ECC735D42C14364400987355 /* .gitignore in Resources */,
 				ECC735AE2C14360800987355 /* Assets.xcassets in Resources */,
 			);
@@ -262,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECC735AC2C14360700987355 /* ContentView.swift in Sources */,
+				EC44FF892C201F11006E47BD /* FontAsset.swift in Sources */,
+				ECC735D62C16F7F200987355 /* Environment.swift in Sources */,
 				ECC735AA2C14360700987355 /* BageulBageulApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +451,7 @@
 				DEVELOPMENT_TEAM = 9G88QGSLX7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BageulBageul/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +486,7 @@
 				DEVELOPMENT_TEAM = 9G88QGSLX7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BageulBageul/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
