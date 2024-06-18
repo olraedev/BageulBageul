@@ -53,6 +53,7 @@
 		EC44FF9C2C20329B006E47BD /* FeatureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureType.swift; sourceTree = "<group>"; };
 		EC44FF9E2C203637006E47BD /* SelectAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAuthView.swift; sourceTree = "<group>"; };
 		EC44FFA02C2036A4006E47BD /* SelectAuthFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAuthFeature.swift; sourceTree = "<group>"; };
+		EC44FFA32C204DBF006E47BD /* BageulBageul.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BageulBageul.entitlements; sourceTree = "<group>"; };
 		ECC735A62C14360700987355 /* BageulBageul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BageulBageul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC735A92C14360700987355 /* BageulBageulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BageulBageulApp.swift; sourceTree = "<group>"; };
 		ECC735AD2C14360800987355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,8 +107,7 @@
 			children = (
 				EC44FF962C2031D8006E47BD /* OnboardingFeature.swift */,
 				EC44FF912C202434006E47BD /* OnboardingView.swift */,
-				EC44FFA02C2036A4006E47BD /* SelectAuthFeature.swift */,
-				EC44FF9E2C203637006E47BD /* SelectAuthView.swift */,
+				EC44FFA22C2039A0006E47BD /* Auth */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -126,6 +126,15 @@
 				EC44FF9C2C20329B006E47BD /* FeatureType.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EC44FFA22C2039A0006E47BD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC44FFA02C2036A4006E47BD /* SelectAuthFeature.swift */,
+				EC44FF9E2C203637006E47BD /* SelectAuthView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		ECC7359D2C14360700987355 = {
@@ -152,6 +161,7 @@
 		ECC735A82C14360700987355 /* BageulBageul */ = {
 			isa = PBXGroup;
 			children = (
+				EC44FFA32C204DBF006E47BD /* BageulBageul.entitlements */,
 				EC44FF9B2C20328B006E47BD /* Protocols */,
 				EC44FF8F2C2021D0006E47BD /* Info.plist */,
 				ECC735D52C16F7F200987355 /* Environment.swift */,
@@ -497,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BageulBageul/BageulBageul.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BageulBageul/Preview Content\"";
@@ -532,6 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BageulBageul/BageulBageul.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BageulBageul/Preview Content\"";

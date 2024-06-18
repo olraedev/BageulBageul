@@ -10,29 +10,33 @@ import SwiftUI
 private struct ButtonWrapper: ViewModifier {
     
     let image: String?
+    let foregroundColor: Color
     let backgroundColor: Color
     let action: () -> Void
     
     func body(content: Content) -> some View {
         Button(action: action, label: {
-            HStack {
+            HStack(alignment: .center, spacing: 5) {
                 Image(systemName: image ?? "")
+                    .font(.customTitle2)
+                
                 content
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 44)
-                    .padding()
+                    .font(.customTitle2)
             }
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
         })
         .frame(maxWidth: .infinity)
-        .frame(height: 44)
-        .background(Color.brandGreen)
+        .frame(height: 44, alignment: .center)
+        .background(backgroundColor)
+        .foregroundStyle(foregroundColor)
         .clipShape(.rect(cornerRadius: 8))
-        .padding()
+        .padding(.horizontal)
     }
 }
 
 extension View {
-    func wrapToButton(iamge: String?, backgroundColor: Color, action: @escaping () -> Void) -> some View {
-        modifier(ButtonWrapper(image: iamge, backgroundColor: backgroundColor, action: action))
+    func wrapToButton(image: String?, foregroundColor: Color, backgroundColor: Color, action: @escaping () -> Void) -> some View {
+        modifier(ButtonWrapper(image: image, foregroundColor: foregroundColor, backgroundColor: backgroundColor, action: action))
     }
 }

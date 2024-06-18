@@ -31,10 +31,10 @@ struct OnboardingView: View {
                 
                 Text("시작하기")
                     .font(.customTitle2)
-                    .foregroundStyle(.brandWhite)
-                    .wrapToButton(iamge: nil, backgroundColor: .brandGreen) {
+                    .wrapToButton(image: nil, foregroundColor: .brandWhite, backgroundColor: .brandGreen) {
                         store.send(.startButtonTapped)
                     }
+                    .padding(.bottom, 24)
             }
         }
         .sheet(item: $store.scope(state: \.destination?.selectAuth, action: \.destination.selectAuth)) { selectAuthStore in

@@ -6,6 +6,7 @@
 //
 
 import ComposableArchitecture
+import AuthenticationServices
 
 @Reducer
 struct SelectAuthFeature: FeatureType {
@@ -15,13 +16,14 @@ struct SelectAuthFeature: FeatureType {
     }
     
     enum Action {
-        
+        case signInWithAppleButtonTapped
     }
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-                
+            case .signInWithAppleButtonTapped:
+                return .none
             }
         }
     }
